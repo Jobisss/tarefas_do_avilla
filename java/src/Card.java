@@ -7,7 +7,7 @@ public class Card {
         this.valor = valor;
     }
 
-    public String toString() {
+    public String toText() {
         return STR."\{this.valor} de \{this.naipe}";
     }
 
@@ -19,14 +19,14 @@ public class Card {
             return false;
         }
     }
-    public int getValue(int actualValue) {
+    public int getValue() {
         if(this.isNumberString()) {
             return Integer.parseInt(this.valor);
         }else {
             if(this.valor.equals("K")  || this.valor.equals("J") || this.valor.equals("Q")) {
                 return 10;
             }else {
-
+                return 0;
             }
         }
     }

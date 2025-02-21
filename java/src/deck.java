@@ -20,7 +20,7 @@ public class deck {
         Collections.shuffle(this.cartas);
     }
 
-    public Card[] reciveCard(int countToSend) {
+    public ArrayList<Card> reciveCard(int countToSend) {
         ArrayList<Card> toSend = new ArrayList<Card>();
         for(int i = 0; i < countToSend ; i++) {
             if(!cartas.isEmpty()) {
@@ -28,7 +28,7 @@ public class deck {
             }
         }
 
-        return  null;
+        return toSend;
     }
 
     public void showRemaing() {
