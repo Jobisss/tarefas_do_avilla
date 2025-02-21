@@ -1,10 +1,16 @@
-public class blackJack {
+public class BlackJack {
 
     deck blackJackDeck = new deck();
     int playerCount;
-    blackJack(int playerCount) {
+    BlackJack(int playerCount) {
         this.playerCount = playerCount;
     }
+
+    void startGame () {
+
+    }
+
+
 
 
 
