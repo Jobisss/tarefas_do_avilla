@@ -24,10 +24,13 @@ public class Player {
 
     void reciveCards(ArrayList<Card> newCards){
         this.cards.addAll(newCards);
+        this.computeValue();
     }
 
-    Boolean getLose() {
-        return this.lose;
+    void listCards() {
+        for(Card card : this.cards) {
+            System.out.println(card.toText());
+        }
     }
 
     void computeValue() {
